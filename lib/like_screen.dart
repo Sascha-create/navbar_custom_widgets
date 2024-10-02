@@ -7,12 +7,8 @@ class LikeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: const Text("MyApp"),
-      ),
-      body: const Center(
+    return const Scaffold(
+      body: Center(
         child: Column(
           children: [
             Padding(
@@ -26,11 +22,6 @@ class LikeScreen extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: NavigationBar(destinations: const [
-        NavigationDestination(icon: Icon(Icons.newspaper), label: "News"),
-        NavigationDestination(icon: Icon(Icons.favorite), label: "Like"),
-        NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
-      ]),
     );
   }
 }
